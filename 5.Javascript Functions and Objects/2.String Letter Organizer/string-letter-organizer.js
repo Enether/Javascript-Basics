@@ -4,7 +4,7 @@
  The sorting is ascending if the boolean is true otherwise the sorting is in descending order.
  Note: The sorting is case-insensitive but the output should use the same casing as the input!
 * */
-outputA = sortLetters("HelloWorld", true);
+var outputA = sortLetters("HelloWorld", true);
 // expected output: deHllloorW
 console.log(outputA);
 
