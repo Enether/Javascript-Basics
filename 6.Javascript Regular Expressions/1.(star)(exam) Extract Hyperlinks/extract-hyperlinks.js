@@ -9,15 +9,15 @@
 * */
 
 // all the code is written in this solution due to the way the automated testing over at judge.softuni.bg works.
-// 50/100 :(
+// 50/100 :( can't figure out why, this program outputs the same output as expected
 function solution(args) {
     // don't ask how long it took to figure out this pattern, HTML shouldn't be parsed with regex anyway...
     var input = readInput(args);
-    var pattern = /(?:<a[^>]*?\s*[^>]*?)href\s*?=\s*("|\s|>|'|)(.+?)\1(\s|>).+?(<\/a>|>)/g;
+    var pattern = /([^'"]|^)(?:<a[^>]*?\s*[^>]*?)href\s*?=\s*("|\s|>|'|)(.+?)\2(\s|>).+?(<\/a>|\>)/g;
     var match;
 
     while(match = pattern.exec(input)){
-        var hrefLink = match[2];
+        var hrefLink = match[3];
         console.log(hrefLink);
     }
 
