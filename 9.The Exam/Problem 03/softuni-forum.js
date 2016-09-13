@@ -1,4 +1,10 @@
+/*The SoftUni forum needs a new functionality – automatic generation of hypertext links to user profiles.
+The user names will be denoted by a hashtag (‘#’) in front of them.
+ You need to find all matching user names and transform them as anchor tags. The most appropriate language for this task is, of course, JavaScript.
+ More information about the problem is in the SoftUniForum.docx file in the same directory as this script
+ */
 // all our code is in this function due to the way the automated testing over at judge.softuni.bg works
+// 80/100
 function solve(input) {
     var pattern = /(#[A-Za-z][A-Za-z0-9_@&*-]+[A-Za-z0-9])([\s:?.,!]|$)/g;
     var REPLACE_PLACEHOLDER = '[REPLACETHIS]'

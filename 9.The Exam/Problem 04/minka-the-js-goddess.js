@@ -1,4 +1,14 @@
+/*
+* Minka really loves JavaScript. She has already solved all the ordinary JavaScript exams, so she decided to move on.
+* Her next mission is to deal with tasks, designed to be solved in C#. These tasks are in format
+ Name & Type & Task Number & Score & Lines of code
+ Your job is to group all the available data in a correct format. For each Task Number, create an object.
+  Each of these objects should hold data for all the tasks that correspond to that number. Display that data in an array that holds the Name and Type. The next-to-last element of the object should be a floating-point number that represents the average score for these tasks. The last part of the object is an integer number, which represents the total number of code lines. The last part of your task is to sort the data by average score, in descending order. If the average score of two tasks is the same, sort by total number of lines, in ascending order.
+ Each of the arrays should be sorted alphabetically by name.
+ Two or more tasks with the same name and type are considered different.
 
+For more information about the problem - open MinkaTheJavaScriptGoddess.docx file in the same directory as this script.
+ * */
 // 100/100 !
 // all our code is in the function below due to the way the automated testing works over at judge.softuni.bg
 function solve(input) {

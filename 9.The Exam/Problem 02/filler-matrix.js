@@ -1,3 +1,7 @@
+/*You are given a matrix of elements and a sequence length N. Your task is to filter all N consecutive
+ equal elements from the matrix, starting from the top-left corner. Take note that a sequence can be found on more than one row.*/
+// all our code is in this function due to the way the automated testing works over at judge.softuni.bg
+// 100/100!
 function solve(input) {
     var matrix = [];
     var countRequired = 0;
